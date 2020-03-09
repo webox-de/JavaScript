@@ -8,11 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>文字数カウンター</h1>
-    <input type="text">
-    
+    <section class="tax">
+    <h1>消費税計算</h1>
+    <table class="">
+        <tr>
+            <th>項目名</th>
+            <th>金額</th>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="number" name="row1"><span>円</span></td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="number" name="row2"><span>円</span></td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="number" name="row3"><span>円</span></td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td class="total"><input type="number" name="row4"><span>円</span></td>
+        </tr>
+    </table>
+    <span>合計</span>
+
+</section>
 
     <script>
+const total = row1 + row2 + row3 + row4;
+
 
     </script>
 </body>
