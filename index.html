@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <hr>
+    <!-- 【宿題】消費税計算アプリ作成ここから -->
+    <p class="title">【宿題】消費税計算アプリ作成</p>
     <form action="" name="form" id="form1">
         <span>金額：</span>
         <input type="number" id="price">
         <span>円</span>
         <input type="button" value="税込" onclick="onButtonClick();">
     </form>
-        
     <span>消費税(10%)込：<span type="number" id="tax"></span>円</span> 
     
     <script>
@@ -24,5 +26,7 @@
             target.innerText = parseInt(textBox.value * 1.10, 10);
         }
     </script>
+    <!-- 【宿題】消費税計算アプリ作成ここまで -->
+    <hr>
 </body>
 </html>

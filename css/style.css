@@ -1,8 +1,4 @@
-.tax {
-    padding: 50px;
-}
-.tax h1 {
+.title {
     font-size: 20px;
-    margin-bottom: 20px;
+    font-weight: bold;
 }
-.tax
