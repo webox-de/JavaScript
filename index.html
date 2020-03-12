@@ -8,23 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <input type="number" name="price" value="0">
-    <span>円</span>
-    <p>消費税(10%)込み</p>
-    <output name=tax></output>  
-    <script type="text/javascript">
-        const tax = price * 1.1;
+    <form action="">
+        <span>金額：</span>
+        <input type="text" name="price">
+        <span>円</span>
+    </form>
+        
+    <span>消費税(10%)込み：</span> 
+    <script>
+        var tax = price * 1.1;
         document.write(tax);
     </script>
 
-<script>
+<!-- <script>
     //宿題１  消費税計算アプリ
     var name = prompt("名前を入力してください。");
     var price = prompt("合計金額を入力してください。");
     var taxPrice = Math.floor(price * 1.1);
     alert ('消費税は「10%」になります。');
     alert (`${name}さんの合計金額は${taxPrice}です。`);
-  </script>
+  </script> -->
 
 
 
