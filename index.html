@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form action="">
+    <form action="" name="form">
         <span>金額：</span>
         <input type="text" name="price">
         <span>円</span>
@@ -16,6 +16,7 @@
         
     <span>消費税(10%)込み：</span> 
     <script>
+        var price = document.form.price.value;
         var tax = price * 1.1;
         document.write(tax);
     </script>
