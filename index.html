@@ -10,15 +10,15 @@
 <body>
     <form action="" name="form">
         <span>金額：</span>
-        <input type="text" name="price">
+        <input type="text" id="price">
         <span>円</span>
     </form>
         
     <span>消費税(10%)込み：</span> 
     <script>
-        var price = document.form.price.value;
-        var tax = price * 1.1;
-        document.write(tax);
+        // var price = document.form.price.value;
+        // var tax = price * 1.1;
+        document.write(document.getElementById("price").value);
     </script>
 
 <!-- <script>
