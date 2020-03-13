@@ -10,7 +10,7 @@
 <body>
     <hr>
     <!-- 【宿題】消費税計算アプリ作成ここから -->
-    <p class="title">【宿題】消費税計算アプリ作成</p>
+    <!-- <p class="title">【宿題】消費税計算アプリ作成</p>
     <form action="" name="form" id="form1">
         <span>金額：</span>
         <input type="number" id="price">
@@ -25,8 +25,15 @@
             textBox = document.getElementById("price");
             target.innerText = parseInt(textBox.value * 1.1, 10);
         }
-    </script>
+    </script> -->
     <!-- 【宿題】消費税計算アプリ作成ここまで -->
+<script>
+    let name = window.prompt("ユーザー名を入力して下さい。");
+    let price = window.prompt("合計金額を入力して下さい。");
+    let tax = Math.floor(price * 1.1)
+    alert(name + "さんの合計金額は" + tax + "円です");
+</script>
+    
     <hr>
 </body>
 </html>

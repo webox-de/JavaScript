@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script>
+    let name = window.prompt("ユーザー名を入力して下さい。");
+    let price = window.prompt("合計金額を入力して下さい。");
+    let tax = Math.floor(price * 1.1)
+    alert(name + "さんの合計金額は" + tax + "円です");
+</script>
+</body>
+</html>
