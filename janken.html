@@ -8,24 +8,29 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form action="">
+    <form name="form1">
         <select name="janken" id="select">
-            <option value="1" id="guu">グー</option>
-            <option value="2" id="choki">チョキ</option>
-            <option value="3" id="paa">パー</option>
+            <option value="1">グー</option>
+            <option value="2">チョキ</option>
+            <option value="3">パー</option>
         </select>
         <input type="button" value="結果" onclick="onButtonClick();">
         <span>結果：<span type="txt" id="result"></span></span> 
     </form>
     <script>
+
         function onButtonClick(){
-        if(select = choki){
-            document.write("勝ち");
-        }else if(select = 2){
-            document.write("あいこ");
-        }else {
-            document.write("負け");
-        }
+            const select = document.form1.select;
+            const hand = select.selectedIndex;
+            document.write(hand);
+            
+        // if(select = choki){
+        //     document.write("勝ち");
+        // }else if(select = 2){
+        //     document.write("あいこ");
+        // }else {
+        //     document.write("負け");
+        // }
 
         }
     </script>
