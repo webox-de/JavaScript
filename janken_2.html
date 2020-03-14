@@ -9,10 +9,12 @@
 </head>
 <body>
     <script>
-        let hand = window.prompt("じゃんけんゲーム", "グー=1,チョキ=2,パー=3 を入力してください");
-        if(hand = 1){
+        let hand = parseInt(prompt("じゃんけんゲーム", "グー=1,チョキ=2,パー=3 を入力してください"));
+        const partnerHand = Math.floor(Math.random() * 3);  //0-3の整数
+        
+        if(hand === 1){
             document.write("勝ち");
-        } else if(hand = 2){
+        } else if(hand === 2){
             document.write("あいこ");
         } else{
             document.write("負け");
