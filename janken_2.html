@@ -11,31 +11,42 @@
     <script>
         let hand = parseInt(prompt("じゃんけんゲーム", "グー=1,チョキ=2,パー=3 を入力してください"));
         const partnerHand = Math.floor( Math.random() * 3);//0-2のランダム整数。0:グー、1:チョキ、2:パー
-        document.write(partnerHand);
 
         if(hand === 1){
-            if(partnerHand === 0){
-                document.write("あいこ");
-            } else if(partnerHand === 1){
-                document.write("勝ち");
-            } else{
-                document.write("負け");
+            switch(partnerHand){
+                case 0:
+                    document.write("あいこ");
+                    break;
+                case 1:
+                    document.write("勝ち");
+                    break;
+                case 2:
+                    document.write("負け");
+                    break;
             }
         } else if(hand === 2){
-            if(partnerHand === 0){
-                document.write("負け");
-            } else if(partnerHand === 1){
-                document.write("あいこ");
-            } else{
-                document.write("勝ち");
+            switch(partnerHand){
+                case 0:
+                        document.write("負け");
+                        break;
+                case 1:
+                        document.write("あいこ");
+                        break;
+                case 2:
+                        document.write("勝ち");
+                        break;
             }
         } else{
-            if(partnerHand === 0){
-                document.write("勝ち");
-            } else if(partnerHand === 1){
-                document.write("負け");
-            } else{
-                document.write("あいこ");
+            switch(partnerHand){
+                case 0:
+                        document.write("勝ち");
+                        break;
+                case 1:
+                        document.write("負け");
+                        break;
+                case 2:
+                        document.write("あいこ");
+                        break;
             }
         }
 
